@@ -1,4 +1,5 @@
 FrontEnd/.env
 FrontEnd/node_modules
+FrontEnd/.Ds_Store
 BackEnd/node_modules
 .vscode
