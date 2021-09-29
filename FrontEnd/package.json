@@ -1,0 +1,22 @@
+{
+  "name": "testcafe_workshop",
+  "version": "1.0.0",
+  "description": "TestCafe Workshop Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test-all-chrome": "testcafe chrome ./tests --reporter html:output/report.html",
+    "test-all-firefox": "testcafe firefox ./tests --reporter html:output/report.html",
+    "test-all-edge": "testcafe edge ./tests --reporter html:output/report.html",
+    "test-all-ie": "testcafe ie ./tests --reporter html:output/report.html",
+    "test-all-browsers": "testcafe all ./tests --reporter html:output/report.html"
+  },
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "testcafe": "^1.15.3",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-testcafe": "^0.2.1"
+  }
+}
