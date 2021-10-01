@@ -8,7 +8,8 @@
     "test-all-firefox": "testcafe firefox ./tests --reporter html:output/report.html",
     "test-all-edge": "testcafe edge ./tests --reporter html:output/report.html",
     "test-all-ie": "testcafe ie ./tests --reporter html:output/report.html",
-    "test-all-browsers": "testcafe all ./tests --reporter html:output/report.html"
+    "test-all-browsers": "testcafe all ./tests --reporter html:output/report.html",
+	"lint": "eslint"
   },
   "dependencies": {
     "dotenv": "^9.0.2",
