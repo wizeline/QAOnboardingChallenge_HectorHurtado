@@ -16,6 +16,8 @@
 
 <code>npm install testcafe-reporter-html</code>
 
+<code>npm install eslint --save-dev</code>
+
 3. Execute the tests (in Google Chrome)
 
 <code>npm run test-all-chrome</code>

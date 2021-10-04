@@ -2,5 +2,7 @@ FrontEnd/.env
 FrontEnd/node_modules
 FrontEnd/.Ds_Store
 FrontEnd/output
+FrontEnd/.scannerwork
 BackEnd/node_modules
+BackEnd/reports
 .vscode
