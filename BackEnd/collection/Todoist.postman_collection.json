@@ -2957,8 +2957,8 @@
 			"script": {
 				"type": "text/javascript",
 				"exec": [
-					"pm.test(\"Response time is less than 1s\", function () {",
-					"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+					"pm.test(\"Response time is less than 1.5s\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(1500);",
 					"});"
 				]
 			}
