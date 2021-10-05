@@ -30,6 +30,16 @@ And if you want a report of the tests, execute this:
 
 <code>testcafe {{NAME_OF_THE_BROWSER}} ./tests --reporter html:output/report.html</code>
 
+Now, if you want to perform a cross platform/browser testing, you can use BrowserStack
+
+<code>npm install testcafe-browser-provider-browserstack</code>
+
+<code>npm run test-all-browserstack</code>
+
+Also you can specify in which platform and browser you want to perform your tests.
+
+<code>testcafe 'browserstack:{{NAME_OF_THE_BROWSER}}@{{VERSION_OF_THE_BROWSER}}:{{PLATFORM}}' ./tests</code>
+
 # Back End - Newman
 
 1. Go to the BackEnd folder

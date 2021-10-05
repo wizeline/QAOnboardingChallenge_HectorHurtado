@@ -9,12 +9,15 @@
     "test-all-edge": "testcafe edge ./tests --reporter html:output/report.html",
     "test-all-ie": "testcafe ie ./tests --reporter html:output/report.html",
     "test-all-browsers": "testcafe all ./tests --reporter html:output/report.html",
+	"test-all-browserstack": "testcafe 'browserstack:chrome@92.0:Windows 10', 'browserstack:safari@13.1:OS X Catalina', 'browserstack:firefox@78.0:OS X Catalina', 'browserstack:opera@79.0:Windows XP' ./tests",
     "lint": "eslint",
-	"sonarqube": "sonar-scanner"
+    "sonarqube": "sonar-scanner",
+	"browserstack": "testcafe -b browserstack"
   },
   "dependencies": {
     "dotenv": "^9.0.2",
     "testcafe": "^1.15.3",
+    "testcafe-browser-provider-browserstack": "^1.13.2-alpha.1",
     "testcafe-reporter-html": "^1.4.6"
   },
   "devDependencies": {
