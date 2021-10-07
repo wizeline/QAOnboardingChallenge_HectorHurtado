@@ -40,6 +40,14 @@ Also you can specify in which platform and browser you want to perform your test
 
 <code>testcafe 'browserstack:{{NAME_OF_THE_BROWSER}}@{{VERSION_OF_THE_BROWSER}}:{{PLATFORM}}' ./tests</code>
 
+To make a full analysis of the code, you can run SonarQube
+
+<code>npm install sonar-scanner</code>
+
+<code>npm run sonarqube</code>
+
+Take a look of the results in this link: http://localhost:9000/dashboard?id=QAOnboardingChallenge
+
 # Back End - Newman
 
 1. Go to the BackEnd folder
