@@ -73,10 +73,10 @@
       <div class="client-logo" style="padding:15px"></div>
       <div class="bg-primary" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
         <h3>Summary</h3><br>
-        <p class="lead">Start Time: Wed Oct 06 2021 16:02:36 GMT-0500 (Central Daylight Time)</p>
+        <p class="lead">Start Time: Thu Oct 07 2021 11:26:55 GMT-0500 (Central Daylight Time)</p>
         <p class="lead">Browsers: Chrome 94.0.4606.71 / macOS 10.15.7</p>
-        <p class="lead">Duration: 1m 48s</p>
-        <p class="lead">Tests Failed: 2 out of 8</p>
+        <p class="lead">Duration: 1m 34s</p>
+        <p class="lead">Tests Failed: 0 out of 8</p>
         <p class="lead">Tests Skipped: 0</p>
       </div><br>
       <table class="table sortable" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
@@ -96,7 +96,7 @@
   <td>Login Feature Testing</td>
   <td>Login with a valid user</td>
   <td>Chrome 94.0.4606.71 / macOS 10.15.7</td>
-  <td>23s</td>
+  <td>12s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -104,7 +104,7 @@
   <td>Login Feature Testing</td>
   <td>Login with an invalid user</td>
   <td>Chrome 94.0.4606.71 / macOS 10.15.7</td>
-  <td>11s</td>
+  <td>7s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -112,7 +112,7 @@
   <td>Login Feature Testing</td>
   <td>Login with a non registered email</td>
   <td>Chrome 94.0.4606.71 / macOS 10.15.7</td>
-  <td>11s</td>
+  <td>8s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -120,7 +120,7 @@
   <td>Login Feature Testing</td>
   <td>Login with an invalid password</td>
   <td>Chrome 94.0.4606.71 / macOS 10.15.7</td>
-  <td>13s</td>
+  <td>8s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -128,7 +128,7 @@
   <td>Login Feature Testing</td>
   <td>Login with no email</td>
   <td>Chrome 94.0.4606.71 / macOS 10.15.7</td>
-  <td>8s</td>
+  <td>7s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -136,24 +136,24 @@
   <td>Login Feature Testing</td>
   <td>Login with no password</td>
   <td>Chrome 94.0.4606.71 / macOS 10.15.7</td>
-  <td>8s</td>
+  <td>7s</td>
   <td>passed</td>
  </tr>
- <tr class="danger">
+ <tr class="success">
   <td>7</td>
   <td>Task Feature Testing</td>
   <td>Create a task</td>
   <td>Chrome 94.0.4606.71 / macOS 10.15.7</td>
-  <td>17s</td>
-  <td><a href="#test-7">failed</a></td>
+  <td>13s</td>
+  <td>passed</td>
  </tr>
- <tr class="danger">
+ <tr class="success">
   <td>8</td>
   <td>Task Feature Testing</td>
   <td>Create 10 tasks</td>
   <td>Chrome 94.0.4606.71 / macOS 10.15.7</td>
-  <td>18s</td>
-  <td><a href="#test-8">failed</a></td>
+  <td>31s</td>
+  <td>passed</td>
  </tr>
 
         </tbody>
@@ -170,45 +170,7 @@
       </table>
       <br>
       <h3>Error Details</h3>
-       <h4 id="test-7" style="color: red;">7. Task Feature Testing - Create a task</h4>
- <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">ReferenceError: window is not defined
-
-Browser: Chrome 94.0.4606.71 / macOS 10.15.7
-
-   11 |    async createSingleTask(taskName) &#123
-   12 |		await t.wait(3000)
-   13 |		if(await this.addTaskLink.exists)
-   14 |			await t.click(this.addTaskLink)
-   15 |		var buf = new Uint8Array(1)
- &gt; 16 |		let randomNumber = window.crypto.getRandomValues(buf).toString().substring(2)
-   17 |		taskName = taskName + randomNumber
-   18 |		await t.typeText(this.taskNameField, taskName)
-   19 |		await t.click(this.addTaskButton)
-   20 |		return taskName
-   21 |	&#125
-
-   at &lt;anonymous&gt; (/Users/hector.hurtado/Documents/OnboardingChallenge/FrontEnd/pages/MainPage.js:16:22)
-   at asyncGeneratorStep (/Users/hector.hurtado/Documents/OnboardingChallenge/FrontEnd/pages/MainPage.js:1:303)
-   at _next (/Users/hector.hurtado/Documents/OnboardingChallenge/FrontEnd/pages/MainPage.js:1:641) </pre><br> <h4 id="test-8" style="color: red;">8. Task Feature Testing - Create 10 tasks</h4>
- <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">ReferenceError: window is not defined
-
-Browser: Chrome 94.0.4606.71 / macOS 10.15.7
-
-   11 |    async createSingleTask(taskName) &#123
-   12 |		await t.wait(3000)
-   13 |		if(await this.addTaskLink.exists)
-   14 |			await t.click(this.addTaskLink)
-   15 |		var buf = new Uint8Array(1)
- &gt; 16 |		let randomNumber = window.crypto.getRandomValues(buf).toString().substring(2)
-   17 |		taskName = taskName + randomNumber
-   18 |		await t.typeText(this.taskNameField, taskName)
-   19 |		await t.click(this.addTaskButton)
-   20 |		return taskName
-   21 |	&#125
-
-   at &lt;anonymous&gt; (/Users/hector.hurtado/Documents/OnboardingChallenge/FrontEnd/pages/MainPage.js:16:22)
-   at asyncGeneratorStep (/Users/hector.hurtado/Documents/OnboardingChallenge/FrontEnd/pages/MainPage.js:1:303)
-   at _next (/Users/hector.hurtado/Documents/OnboardingChallenge/FrontEnd/pages/MainPage.js:1:641) </pre><br>
+      
     </div>
     <script>
       const modal = document.getElementById('myModal');

@@ -14,7 +14,6 @@ class LoginPage {
 		if(password != '')
 			await t.typeText(this.passwordField, password)
 		await t.click(this.loginButton)
-		await t.wait(3000)
 	}
 }
 

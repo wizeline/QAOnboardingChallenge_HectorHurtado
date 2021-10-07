@@ -9,7 +9,6 @@ class MainPage {
 	}
 
 	async createSingleTask(taskName) {
-		await t.wait(3000)
 		if(await this.addTaskLink.exists)
 			await t.click(this.addTaskLink)
 		let randomNumber = Math.random().toString().substring(2)
